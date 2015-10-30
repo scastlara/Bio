@@ -1,5 +1,5 @@
-package Sequence;
-
+#!/usr/bin/perl
+package Bio::Sequence;
 use Moose;
 
 
@@ -32,7 +32,7 @@ sub match {
 	my $self  = shift;
 	my $motif = shift;
 
-	return $self =~ /$motif/ ? 1 : 0;
+	return $self->seq =~ /$motif/ ? 1 : 0;
 }
 
 
